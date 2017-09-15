@@ -1,4 +1,14 @@
 # (sid):(dc):(wan_ip):(host_name):(lan_ip):(role1,role2):(price):
 #
-# Server in Dallas, Texas
-NPM-031:MBS:192.0.95.195:nickmomrik.gm.a8c.com:192.0.95.195:nginx-base,nginx-php,mysql-base:0:
+# Solo Project Server
+#NPM-031:MBS:192.0.95.195:nickmomrik.gm.a8c.com:192.0.95.195:nginx-base,nginx-php,mysql-base:0:
+
+# Team Project Servers
+
+# LB/Web Hosts:
+LBW-1:WHS:192.0.95.226:web1.g4.gm.a8c.com:192.0.95.226:nginx-base,nginx-php,wordpress,wordpress-lb:0:
+LBW-2:WHS:192.0.95.227:web2.g4.gm.a8c.com:192.0.95.227:nginx-base,nginx-php,wordpress,wordpress-lb:0:
+
+# DB Hosts
+DB-1:WHS:192.0.95.219:db1.g4.gm.a8c.com:192.0.95.219:mysql-base,wordpress-db:0:
+DB-2:WHS:192.0.95.220:db2.g4.gm.a8c.com:192.0.95.220:mysql-base,wordpress-db:0:
