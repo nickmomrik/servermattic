@@ -10,4 +10,6 @@ apt-get install unzip
 unzip latest.zip
 rm -f latest.zip
 
+chown -R nobody:nogroup /var/www/wordpress/wp-content
+
 service nginx restart
